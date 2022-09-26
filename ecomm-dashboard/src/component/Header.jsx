@@ -17,7 +17,6 @@ function Header() {
           </Nav>
         </Container>
       </Navbar>
-      <h2>Ecom project</h2>
     </div>
   );
 }
