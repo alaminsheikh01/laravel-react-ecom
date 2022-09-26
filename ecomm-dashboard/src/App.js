@@ -5,6 +5,7 @@ import Login from "./component/Login";
 import SignUp from "./component/SignUp";
 import AddProduct from "./component/AddProduct";
 import UpdateProduct from "./component/UpdateProduct";
+import Protected from "./component/Protected";
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
-          <Route path="/add" element={<AddProduct />} />
+          <Route path="/add" element={<Protected Cmp={AddProduct} />} />
+
           <Route path="/update" element={<UpdateProduct />} />
         </Routes>
       </BrowserRouter>
